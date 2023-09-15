@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200&display=swap" rel="stylesheet">
+  
+    <title>Stopwatch</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Stopwatch</h1>
+        <div class="main__menu">
+            <input type="checkbox" id="color" class="btn">
+            <label for="color"> 
+                <span class="palette">Choose your color palette</span>
+            </label>
+            <ul class="main__list">
+                <li class="list__item"> 
+                    <input class="input" type="radio" id="Sapphire" name="drone" value="Sapphire" checked /> 
+                    <label for="Sapphire">Dark Sapphire Blue</label>
+                </li>
+
+                <li class="list__item">
+                    <input class="input" type="radio" id="neon" name="drone" value="Neon" /> 
+                    <label for="neon">Neon</label>
+                </li>
+
+                <li class="list__item">
+                    <input class="input" type="radio" id="electric" name="drone" value="electric" /> 
+                    <label for="electric">Electric City Nights</label>
+                </li>
+            </ul>
+        </div>
+       
+    </header>
+
+    <div class="main__clock">
+        <div class="clock__format">
+            <div id="hours" class=" time clock__hours">00</div>
+            <div  class="separator ">:</div>
+            <div id="minutes" class=" time clock__minutes">00</div>
+            <div class="separator ">:</div>
+            <div id="seconds" class=" time clock__seconds">00</div>
+            <div class="separator ">:</div>
+            <div id="milliseconds" class=" time clock__milliseconds">000</div>
+        </div>
+
+        <div class="main__button">
+            <button id="start" class="button" type="button">START <span class="material-symbols-outlined">
+                play_circle</span>
+            </button>
+            <button id="pause" class="button" type="button">PAUSE <span class="material-symbols-outlined">
+                pause_circle</span>
+            </button>
+            <button id="reset" class="button" type="button">RESET <span class="material-symbols-outlined">
+                restart_alt</span>
+            </button>
+        </div>
+    </div>
+   <script src="./main.js"></script>
+</body>
+</html>
